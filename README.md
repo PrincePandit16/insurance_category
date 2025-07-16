@@ -54,5 +54,55 @@ A complete **machine learning web application** using **FastAPI (backend)** and 
 ```bash
 git clone https://github.com/your-username/insurance-premium-predictor.git
 cd insurance-premium-predictor
+```
+
+### 2. Create Virtual Environment & Install Dependencies
+
+```bash
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
 
+
+### 3. Start Backend(FastAPI)
+```bash
+uvicorn app:app --reload
+```
+
+### 4. Start Frontend(Streamlit)
+```bash
+streamlit run frontend.py
+```
+
+
+### 💡Features Used in Model
+1. bmi (calculated)
+2. age_grouped
+3. lifestyle_risk
+4. city_tier
+5. income_lpa
+6. occupation
+
+
+### 📁Project Structure
+```bash
+insurance-premium-predictor/
+├── app.py             # FastAPI backend for prediction API
+├── frontend.py        # Streamlit UI to interact with the API
+├── model.pkl          # Trained machine learning model (pickled)
+├── requirements.txt   # List of required Python packages
+├── README.md          # Project documentation (this file)
+├── .gitignore         # Files/folders to ignore in Git
+```
+
+### 🧠 Future Enhancements
+* Add login/authentication system
+* Deploy to cloud (Render, AWS, etc.)
+* Add Jupyter notebook for model training
+* Improve UI/UX using HTML/CSS components
+
+
+### 🙌 Contributing
+Pull requests are welcome! Open issues for feature ideas or bug reports.
